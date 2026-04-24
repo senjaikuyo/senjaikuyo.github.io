@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afif Hamzah Siregar | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#121212',
+                        light: '#F5F5F5',
+                        accent: '#D4FF33',
+                        muted: '#A0A0A0'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-dark text-light selection:bg-accent selection:text-dark">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300">
+        <a href="#home" class="text-2xl font-black tracking-tighter text-white">AFIF.</a>
+        <div class="hidden md:flex gap-8 items-center bg-white/10 px-6 py-2 rounded-full">
+            <a href="#home" class="text-sm font-medium hover:text-accent transition-colors">Home</a>
+            <a href="#about" class="text-sm font-medium hover:text-accent transition-colors">About</a>
+            <a href="#skills" class="text-sm font-medium hover:text-accent transition-colors">Skills</a>
+            <a href="#works" class="text-sm font-medium hover:text-accent transition-colors">Works</a>
+        </div>
+        <a href="mailto:afifsiregar27@gmail.com" class="hidden md:block px-6 py-3 bg-accent text-dark font-bold rounded-full hover:scale-105 transition-transform">
+            Let's Talk
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center px-6 md:px-12 pt-32 pb-20 relative overflow-hidden bg-light text-dark">
+        <div class="max-w-6xl mx-auto w-full z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-3/5">
+                <h2 class="text-xl font-bold uppercase tracking-widest text-dark/60 mb-2">Hi! I'm Afif Hamzah Siregar</h2>
+                <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6">FULL-STACK <br/>DEVELOPER</h1>
+                <p class="text-xl md:text-2xl font-medium text-dark/80 max-w-xl leading-relaxed">
+                    Mahasiswa Teknik Rekayasa Perangkat Lunak di Politeknik Negeri Batam.
+                <div class="flex gap-4 mt-8">
+                    <a href="#works" class="px-8 py-4 bg-dark text-white font-bold rounded-full hover:bg-dark/80 transition-colors">SEE MY WORKS</a>
+                    <a href="#about" class="px-8 py-4 border-2 border-dark text-dark font-bold rounded-full hover:bg-dark hover:text-white transition-colors">MORE ABOUT ME</a>
+                </div>
+            </div>
+            <div class="w-full md:w-2/5 flex justify-center">
+                <div class="w-64 h-80 md:w-80 md:h-96 bg-dark/10 rounded-[60px] border-2 border-dark overflow-hidden flex items-center justify-center">
+                    <!-- Placeholder for Image -->
+                    <img src="afif.JPG" alt="" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        <!-- Decorative Grid -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#1e1e1e 1px, transparent 1px); background-size: 40px 40px;"></div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="bg-accent text-dark py-6 transform -rotate-2 -my-6 relative z-20 shadow-xl overflow-hidden flex whitespace-nowrap">
+        <div class="animate-[marquee_20s_linear_infinite] flex items-center gap-8 text-4xl font-black tracking-tighter uppercase">
+            <span>FULL-STACK ENTHUSIAST</span> <span>•</span>
+            <span>PHP & MYSQL</span> <span>•</span>
+            <span>TRPL POLIBATAM</span> <span>•</span>
+            <span>FULL-STACK ENTHUSIAST</span> <span>•</span>
+            <span>PHP & MYSQL</span> <span>•</span>
+            <span>TRPL POLIBATAM</span> <span>•</span>
+        </div>
+    </div>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 md:px-12 bg-dark">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/3">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tighter">WHO AM I?</h2>
+            </div>
+            <div class="md:w-2/3 flex flex-col gap-10">
+                <p class="text-3xl md:text-4xl font-bold leading-tight">
+                    Spesialis aplikasi pake PHP, React,MySQL, dan Python. <br>
+                    <span class="text-muted">full-stack enthusiast yang hobi apapun asal ada niat!</span>
+                </p>
+                
+                <div class="glass p-8 rounded-3xl mt-4 border-l-4 border-l-accent">
+                    <h3 class="text-2xl font-bold mb-6 text-accent">Riwayat Pendidikan</h3>
+                    <div class="flex flex-col gap-6">
+                        <div>
+                            <span class="text-accent font-bold mb-1">2025 - Present</span>
+                            <h4 class="text-xl font-bold">Politeknik Negeri Batam (Polibatam)</h4>
+                            <p class="text-muted mt-1">Teknologi Rekayasa Perangkat Lunak (TRPL)</p>
+                        </div>
+                        <div class="w-full h-px bg-white/10"></div>
+                        <div>
+                            <span class="text-accent font-bold mb-1">2022 - 2025</span>
+                            <h4 class="text-xl font-bold">SMA NEGERI 3 Batam</h4>
+                            <p class="text-muted mt-1">Kurikulum Merdeka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-32 px-6 md:px-12 bg-[#1a1a1a]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-16 text-center">SKILLSET</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Frontend -->
+                <div class="glass p-10 rounded-[40px] hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-accent mb-6">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">FRONTEND</h3>
+                    <p class="text-muted text-lg">React dan Tailwind CSS</p>
+                </div>
+                <!-- Backend -->
+                <div class="glass p-10 rounded-[40px] hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-accent mb-6">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">BACKEND</h3>
+                    <p class="text-muted text-lg">PHP dan MySQL</p>
+                </div>
+                <!-- Data Analyst -->
+                <div class="glass p-10 rounded-[40px] hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-accent mb-6">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">DATA ANALYST</h3>
+                    <p class="text-muted text-lg">Analisis market saham pake Python.</p>
+                </div>
+                <!-- Tools -->
+                <div class="glass p-10 rounded-[40px] hover:-translate-y-2 transition-transform duration-300">
+                    <div class="text-accent mb-6">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">TOOLS LAINNYA</h3>
+                    <p class="text-muted text-lg">TypeScript, Next.js, Bootstrap, manajemen database relasional dll.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="py-32 px-6 md:px-12 bg-dark">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-accent">SELECTED WORKS</h2>
+            <p class="text-xl text-muted mb-16">Ini proyek yang sudah aku kerjakan</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- V-EX -->
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">Virtual Exhibition (V-EX) System</h3>
+                        <p class="text-muted mb-6">Aplikasi pameran virtual yang dibangun pake Next.js, TypeScript, Three.js dan Tailwind CSS.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Next.js</span>
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">TypeScript</span>
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Tailwind CSS</span>
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Three.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KasWarga -->
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">KasWarga</h3>
+                        <p class="text-muted mb-6">Aplikasi buat ngurus keuangan warga pake PHP, MySQL, dan Bootstrap.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">PHP</span>
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">MySQL</span>
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IHSG Screener -->
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">IHSG Stock Screener</h3>
+                        <p class="text-muted mb-6">jago anaalisa data, pake Python buat mantau pergerakan saham di Indonesia.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Data Analysist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#111] border-t border-white/10 pt-20 pb-10 px-6 md:px-12 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 z-10 relative">
+            <div class="max-w-md">
+                <h3 class="text-3xl md:text-4xl font-black mb-6">
+                    HAVE AN IDEA?<br/>
+                    <span class="text-accent">LET'S BUILD IT.</span>
+                </h3>
+                <a href="mailto:afifsiregar27@gmail.com" class="text-xl font-bold hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-1 inline-block">
+                    afifsiregar27@gmail.com
+                </a>
+            </div>
+            <div class="flex gap-16">
+                <div class="flex flex-col gap-4">
+                    <h4 class="font-bold text-lg text-white">Socials</h4>
+                    <a href="https://github.com/senjaikuyo" target="_blank" class="text-muted hover:text-white transition-colors">GitHub</a>
+                    <a href="https://www.linkedin.com/in/afif-hamzah-siregar-863288345/" target="_blank" class="text-muted hover:text-white transition-colors">LinkedIn</a>
+                    <a href="https://www.instagram.com/affhmzh_/" target="_blank" class="text-muted hover:text-white transition-colors">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-muted z-10 relative">
+            <p>&copy; 2026 Afif Hamzah Siregar. All rights reserved.</p>
+            <p>Designed with <span class="text-accent">&hearts;</span> by Afif</p>
+        </div>
+        
+        <!-- Big Text Background -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center opacity-5 pointer-events-none z-0">
+            <h1 class="text-[15vw] font-black leading-none whitespace-nowrap">AFIF HAMZAH</h1>
+        </div>
+    </footer>
+
+</body>
+</html>
