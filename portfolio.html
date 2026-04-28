@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afif Hamzah Siregar | Portfolio</title>
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden; 
+            scrollbar-width: none;
+        }
+
+        ::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -43,7 +54,7 @@
             <a href="#skills" class="text-sm font-medium hover:text-accent transition-colors">Skills</a>
             <a href="#works" class="text-sm font-medium hover:text-accent transition-colors">Works</a>
         </div>
-        <a href="mailto:afifsiregar27@gmail.com" class="hidden md:block px-6 py-3 bg-accent text-dark font-bold rounded-full hover:scale-105 transition-transform">
+        <a href="https://mail.google.com/mail/?view=cm&to=afifsiregar27@gmail.com&su=Halo%20Afif!Saya%20tertarik%20dengan%20jasa%20Anda!"class="hidden md:block px-6 py-3 bg-accent text-dark font-bold rounded-full hover:scale-105 transition-transform">
             Let's Talk
         </a>
     </nav>
@@ -56,6 +67,7 @@
                 <h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-6">FULL-STACK <br/>DEVELOPER</h1>
                 <p class="text-xl md:text-2xl font-medium text-dark/80 max-w-xl leading-relaxed">
                     Mahasiswa Teknik Rekayasa Perangkat Lunak di Politeknik Negeri Batam.
+                </p>
                 <div class="flex gap-4 mt-8">
                     <a href="#works" class="px-8 py-4 bg-dark text-white font-bold rounded-full hover:bg-dark/80 transition-colors">SEE MY WORKS</a>
                     <a href="#about" class="px-8 py-4 border-2 border-dark text-dark font-bold rounded-full hover:bg-dark hover:text-white transition-colors">MORE ABOUT ME</a>
@@ -99,7 +111,7 @@
             <div class="md:w-2/3 flex flex-col gap-10">
                 <p class="text-3xl md:text-4xl font-bold leading-tight">
                     Spesialis aplikasi pake PHP, React,MySQL, dan Python. <br>
-                    <span class="text-muted">full-stack enthusiast yang hobi apapun asal ada niat!</span>
+                    <span class="text-muted">full-stack enthusiast yang hobi apapun asal ada niat</span>
                 </p>
                 
                 <div class="glass p-8 rounded-3xl mt-4 border-l-4 border-l-accent">
@@ -171,44 +183,39 @@
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- V-EX -->
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">Virtual Exhibition (V-EX) System</h3>
-                        <p class="text-muted mb-6">Aplikasi pameran virtual yang dibangun pake Next.js, TypeScript, Three.js dan Tailwind CSS.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Next.js</span>
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">TypeScript</span>
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Tailwind CSS</span>
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Three.js</span>
-                        </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">Virtual Exhibition (V-EX) System</h3>
+                    <p class="text-muted mb-6">Aplikasi pameran virtual yang dibangun pake Next.js, TypeScript, Three.js dan Tailwind CSS.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Next.js</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">TypeScript</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Tailwind CSS</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Three.js</span>
                     </div>
                 </div>
 
                 <!-- KasWarga -->
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">KasWarga</h3>
-                        <p class="text-muted mb-6">Aplikasi buat ngurus keuangan warga pake PHP, MySQL, dan Bootstrap.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">PHP</span>
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">MySQL</span>
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Bootstrap</span>
-                        </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">KasWarga</h3>
+                    <p class="text-muted mb-6">Aplikasi buat ngurus keuangan warga pake PHP, MySQL, dan Bootstrap.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">PHP</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">MySQL</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Bootstrap</span>
                     </div>
                 </div>
 
                 <!-- IHSG Screener -->
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold mb-3 group-hover:text-accent transition-colors">IHSG Stock Screener</h3>
-                        <p class="text-muted mb-6">jago anaalisa data, pake Python buat mantau pergerakan saham di Indonesia.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Python</span>
-                            <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Data Analysist</span>
-                        </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-bold mb-3">IHSG Stock Screener</h3>
+                    <p class="text-muted mb-6">Jago analisa data, pake Python buat mantau pergerakan saham di Indonesia.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Python</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Data Analyst</span>
+                        <span class="px-3 py-1 text-xs font-bold bg-white/10 rounded-full">Api</span>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Footer -->
@@ -219,7 +226,7 @@
                     HAVE AN IDEA?<br/>
                     <span class="text-accent">LET'S BUILD IT.</span>
                 </h3>
-                <a href="mailto:afifsiregar27@gmail.com" class="text-xl font-bold hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-1 inline-block">
+                <a href="https://mail.google.com/mail/?view=cm&to=afifsiregar27@gmail.com&su=Halo%20Afif!Saya%20tertarik%20dengan%20jasa%20Anda!" class="text-xl font-bold hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-1 inline-block">
                     afifsiregar27@gmail.com
                 </a>
             </div>
